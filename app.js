@@ -66,12 +66,18 @@
       const desc = escapeHtml(getText(item.descShort, lang));
       const price = formatPrice(item.price, lang);
       const imgSrc = resolveImageSrc(item);
-  
-      // button化：将来「売り切れ」「詳細」などを拡張しやすい
+    
+      const isComingSoon = item.status === "comingSoon";
+      const comingSoonLabel = escapeHtml(MENU.i18n[lang]?.labels?.comingSoon || "COMING SOON");
+    
       return `
-        <button type="button" class="card" data-item-id="${item.id}" aria-label="${name}">
-          <img class="card__img" src="${imgSrc}" alt="${name}" loading="lazy"
-               onerror="this.onerror=null;this.src='${MENU.options.imageFallback}'">
+        <button type="button" class="card ${isComingSoon ? "is-coming-soon" : ""}" data-item-id="${item.id}" aria-label="${name}">
+          <div class="card__media">
+            <img class="card__img" src="${imgSrc}" alt="${name}" loading="lazy"
+                 onerror="this.onerror=null;this.src='${MENU.options.imageFallback}'">
+            ${isComingSoon ? `<div class="card__flag"><span>${comingSoonLabel}</span></div>` : ""}
+          </div>
+    
           <div class="card__body">
             <div>
               <div class="card__name">${name}</div>
@@ -84,6 +90,7 @@
         </button>
       `;
     }
+    
   
     function applyLang(lang) {
       state.lang = lang;
