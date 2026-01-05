@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaran Online Menu</title>
+
+  <!-- Tailwindは任意：ユーティリティを使いたいなら残す -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="page max-w-md mx-auto pb-10">
+  <header class="header sticky top-0 z-10">
+    <div class="header__inner px-4 py-4 text-center">
+      <h1 class="text-2xl font-bold text-gray-800">Jaran</h1>
+      <p class="text-xs text-gray-500 uppercase tracking-widest mt-1">Chicken Broth Noodle House</p>
+
+      <div class="lang-tabs mt-4 border-t pt-3" role="tablist" aria-label="Language switcher">
+        <button type="button" id="btn-en" class="lang-tabs__btn is-active" data-lang="en" role="tab" aria-selected="true">English</button>
+        <button type="button" id="btn-fa" class="lang-tabs__btn" data-lang="fa" role="tab" aria-selected="false">فارسی</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="px-4 mt-6">
+    <section class="text-center mb-8 px-2" aria-label="Commitment">
+      <p id="commit-text" class="italic text-gray-600 text-xs leading-relaxed"></p>
+    </section>
+
+    <!-- セクションはJSで生成（カテゴリー追加が容易） -->
+    <div id="sections-root"></div>
+
+    <div class="footer-note" id="footer-note"></div>
+  </main>
+
+  <!-- Modal（将来の詳細表示拡張用。今の段階で実装も入れる） -->
+  <div id="modal-overlay" class="modal-overlay" hidden></div>
+
+  <dialog id="item-modal" class="modal" aria-label="Menu item details">
+    <form method="dialog" class="modal__frame">
+      <button class="modal__close" value="cancel" aria-label="Close">×</button>
+
+      <div class="modal__media">
+        <img id="modal-image" alt="" loading="lazy">
+      </div>
+
+      <div class="modal__body">
+        <div class="modal__head">
+          <h3 id="modal-title" class="modal__title"></h3>
+          <div id="modal-price" class="modal__price"></div>
+        </div>
+
+        <p id="modal-desc" class="modal__desc"></p>
+
+        <!-- 将来拡張領域（例：アレルゲン、辛さ、注意事項、売り切れ等） -->
+        <div id="modal-meta" class="modal__meta"></div>
+
+        <menu class="modal__actions">
+          <button value="cancel" class="modal__btn">Close</button>
+        </menu>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="./menu-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
