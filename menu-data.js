@@ -6,7 +6,7 @@ window.MENU = {
       currency: "IRR",        // 表示したくないなら app.js 側で非表示化可能
       showCurrencySymbol: false,
       imageBasePath: "./assets/menu/",
-      imageDefaultExt: "webp",
+      imageDefaultExt: "jpg",
       imageFallback: "./assets/placeholder-food.webp",
     },
   
@@ -22,6 +22,9 @@ window.MENU = {
           drinks: "Drinks",
         },
         footer: "When ordering, you can choose your noodle firmness (Barikata / Hard / Regular / Soft) and broth richness (Rich / Regular / Light).",
+        labels: {
+          comingSoon: "COMING SOON" // en
+        }
       },
       fa: {
         commitment: "طعم اومامی شفاف مرغ. ما فقط از آب مرغ خالص استفاده می‌کنیم—سبک و در عین حال عمیقاً خوشمزه.",
@@ -34,6 +37,9 @@ window.MENU = {
           drinks: "نوشیدنی",
         },
         footer: "هنگام سفارش، می‌توانید سفتی نودل و غلظت آبگوشت را انتخاب کنید.",
+        labels: {
+          comingSoon: "به‌زودی"
+        }
       },
     },
   
@@ -93,29 +99,30 @@ window.MENU = {
               en: "Slow-cooked chashu served over steamed rice. Comforting and filling.",
               fa: "چاشوی آرام‌پز روی برنج بخارپز. سیرکننده و خوش‌خوراک.",
             },
-            price: 2000000,
+            price: 2500000,
             tags: ["popular"],
+            status: "comingSoon" // ← これ
           },
-          {
-            id: "bowl-karaage-don",
-            name: { en: "Karaage-don", fa: "کاراآگه-دون" },
-            descShort: { en: "Fried chicken over rice.", fa: "مرغ سوخاری روی برنج." },
-            descLong: {
-              en: "Crispy karaage with sauce over rice. Great with a side soup.",
-              fa: "کاراآگه ترد با سس روی برنج. عالی کنار سوپ.",
-            },
-            price: 2000000,
-          },
-          {
-            id: "bowl-soboro-don",
-            name: { en: "Soboro-don", fa: "سوبورو-دون" },
-            descShort: { en: "Minced chicken over rice.", fa: "مرغ چرخ‌کرده روی برنج." },
-            descLong: {
-              en: "Seasoned minced chicken over rice. Mild and kid-friendly.",
-              fa: "مرغ چرخ‌کرده مزه‌دار روی برنج. ملایم و مناسب خانواده.",
-            },
-            price: 1500000,
-          },
+          // {
+          //   id: "bowl-karaage-don",
+          //   name: { en: "Karaage-don", fa: "کاراآگه-دون" },
+          //   descShort: { en: "Fried chicken over rice.", fa: "مرغ سوخاری روی برنج." },
+          //   descLong: {
+          //     en: "Crispy karaage with sauce over rice. Great with a side soup.",
+          //     fa: "کاراآگه ترد با سس روی برنج. عالی کنار سوپ.",
+          //   },
+          //   price: 2500000,
+          // },
+          // {
+          //   id: "bowl-soboro-don",
+          //   name: { en: "Soboro-don", fa: "سوبورو-دون" },
+          //   descShort: { en: "Minced chicken over rice.", fa: "مرغ چرخ‌کرده روی برنج." },
+          //   descLong: {
+          //     en: "Seasoned minced chicken over rice. Mild and kid-friendly.",
+          //     fa: "مرغ چرخ‌کرده مزه‌دار روی برنج. ملایم و مناسب خانواده.",
+          //   },
+          //   price: 2000000,
+          // },
         ],
       },
   
@@ -143,13 +150,13 @@ window.MENU = {
             },
             price: 1500000,
           },
-          {
-            id: "side-rice",
-            name: { en: "Rice", fa: "برنج" },
-            descShort: { en: "Steamed Japanese rice.", fa: "برنج ژاپنی بخارپز." },
-            descLong: { en: "A bowl of steamed rice.", fa: "یک کاسه برنج بخارپز." },
-            price: 1000000,
-          },
+          // {
+          //   id: "side-rice",
+          //   name: { en: "Rice", fa: "برنج" },
+          //   descShort: { en: "Steamed Japanese rice.", fa: "برنج ژاپنی بخارپز." },
+          //   descLong: { en: "A bowl of steamed rice.", fa: "یک کاسه برنج بخارپز." },
+          //   price: 1000000,
+          // },
         ],
       },
   
@@ -204,7 +211,8 @@ window.MENU = {
             name: { en: "Crème Brûlée", fa: "کرم بروله" },
             descShort: { en: "Rich custard dessert.", fa: "دسر کاستارد غنی." },
             descLong: { en: "Silky custard with caramelized sugar top.", fa: "کاستارد لطیف با رویه کاراملی." },
-            price: 1500000,
+            price: 1000000,
+            status: "comingSoon" // ← これ
           },
         ],
       },
