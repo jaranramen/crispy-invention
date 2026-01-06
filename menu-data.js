@@ -94,7 +94,7 @@ window.MENU = {
           {
             id: "bowl-chashu-don",
             name: { en: "Chashu-don", fa: "چاشو-دون" },
-            descShort: { en: "Tender pork over rice.", fa: "گوشت خوک نرم روی برنج." },
+            descShort: { en: "Tender pork over rice.", fa: "گوشت مرغ　نرم روی برنج." },
             descLong: {
               en: "Slow-cooked chashu served over steamed rice. Comforting and filling.",
               fa: "چاشوی آرام‌پز روی برنج بخارپز. سیرکننده و خوش‌خوراک.",
@@ -133,7 +133,7 @@ window.MENU = {
           {
             id: "side-gyoza",
             name: { en: "Gyoza", fa: "گیوزا" },
-            descShort: { en: "Crispy dumplings (5pcs).", fa: "دامپلینگ ترد (۵ تکه)." },
+            descShort: { en: "Crispy dumplings (4pcs).", fa: "دامپلینگ ترد (4 تکه)." },
             descLong: {
               en: "Pan-fried gyoza with a crisp base. Served with dipping sauce.",
               fa: "گیوزای سرخ‌شده با کف ترد. همراه سس مخصوص.",
@@ -143,7 +143,7 @@ window.MENU = {
           {
             id: "side-karaage",
             name: { en: "Karaage", fa: "کاراآگه" },
-            descShort: { en: "Juicy fried chicken (3pcs).", fa: "مرغ سوخاری آبدار (۳ تکه)." },
+            descShort: { en: "Juicy fried chicken (5pcs).", fa: "مرغ سوخاری آبدار (5 تکه)." },
             descLong: {
               en: "Juicy karaage, freshly fried. Best eaten hot.",
               fa: "کاراآگه آبدار و تازه‌سرخ‌شده. بهترین حالت داغ.",
@@ -178,20 +178,20 @@ window.MENU = {
             descLong: { en: "Extra 3 slices of chashu. ", fa: "چند ورقه چاشوی اضافه." },
             price: 1000000,
           },
-          {
-            id: "top-negi",
-            name: { en: "Negi", fa: "نگی" },
-            descShort: { en: "Fresh scallions.", fa: "پیازچه تازه." },
-            descLong: { en: "Fresh chopped scallions.", fa: "پیازچه تازه خرد شده." },
-            price: 300000,
-          },
-          {
-            id: "top-nori",
-            name: { en: "Nori", fa: "نوری" },
-            descShort: { en: "Dried seaweed.", fa: "جلبک دریایی خشک." },
-            descLong: { en: "Crisp nori sheets.", fa: "ورقه‌های نوری ترد." },
-            price: 500000,
-          },
+          // {
+          //   id: "top-negi",
+          //   name: { en: "Negi", fa: "نگی" },
+          //   descShort: { en: "Fresh scallions.", fa: "پیازچه تازه." },
+          //   descLong: { en: "Fresh chopped scallions.", fa: "پیازچه تازه خرد شده." },
+          //   price: 300000,
+          // },
+          // {
+          //   id: "top-nori",
+          //   name: { en: "Nori", fa: "نوری" },
+          //   descShort: { en: "Dried seaweed.", fa: "جلبک دریایی خشک." },
+          //   descLong: { en: "Crisp nori sheets.", fa: "ورقه‌های نوری ترد." },
+          //   price: 500000,
+          // },
           {
             id: "top-soboro",
             name: { en: "Soboro", fa: "سوبورو" },
