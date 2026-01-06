@@ -21,7 +21,7 @@ window.MENU = {
           desserts: "Desserts",
           drinks: "Drinks",
         },
-        footer: "When ordering, you can choose your noodle firmness (Barikata / Hard / Regular / Soft) and broth richness (Rich / Regular / Light).",
+        footer: "All prices are exclusive of tax. A separate 10% consumption tax will be charged.",
         labels: {
           comingSoon: "COMING SOON" // en
         }
@@ -36,7 +36,7 @@ window.MENU = {
           desserts: "دسر",
           drinks: "نوشیدنی",
         },
-        footer: "هنگام سفارش، می‌توانید سفتی نودل و غلظت آبگوشت را انتخاب کنید.",
+        footer: "تمام قیمت‌ها بدون احتساب مالیات هستند. 10% مالیات بر مصرف جداگانه دریافت خواهد شد.",
         labels: {
           comingSoon: "به‌زودی"
         }
@@ -174,8 +174,8 @@ window.MENU = {
           {
             id: "top-chashu",
             name: { en: "Chashu", fa: "چاشو" },
-            descShort: { en: "Extra pork slices.", fa: "ورقه‌های اضافی گوشت." },
-            descLong: { en: "Extra slices of chashu.", fa: "چند ورقه چاشوی اضافه." },
+            descShort: { en: "Extra 3 slices of chashu.", fa: "ورقه‌های اضافی گوشت." },
+            descLong: { en: "Extra 3 slices of chashu. ", fa: "چند ورقه چاشوی اضافه." },
             price: 1000000,
           },
           {
@@ -226,14 +226,14 @@ window.MENU = {
             name: { en: "Cola", fa: "کولا" },
             descShort: { en: "Refreshing soft drink.", fa: "نوشابه گازدار خنک." },
             descLong: { en: "Served chilled.", fa: "سرد سرو می‌شود." },
-            price: 200000,
+            price: 250000,
           },
           {
             id: "drink-water",
             name: { en: "Water", fa: "آب" },
             descShort: { en: "Mineral water.", fa: "آب معدنی." },
             descLong: { en: "Still mineral water.", fa: "آب معدنی بدون گاز." },
-            price: 150000,
+            price: 100000,
           },
         ],
       },
