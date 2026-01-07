@@ -99,7 +99,7 @@ window.MENU = {
               en: "Slow-cooked chashu served over steamed rice. Comforting and filling.",
               fa: "چاشوی آرام‌پز روی برنج بخارپز. سیرکننده و خوش‌خوراک.",
             },
-            price: 2500000,
+            price: 3000000,
             tags: ["popular"],
             // status: "comingSoon" // ← これ
           },
