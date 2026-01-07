@@ -101,28 +101,38 @@ window.MENU = {
             },
             price: 2500000,
             tags: ["popular"],
-            status: "comingSoon" // ← これ
+            // status: "comingSoon" // ← これ
           },
-          // {
-          //   id: "bowl-karaage-don",
-          //   name: { en: "Karaage-don", fa: "کاراآگه-دون" },
-          //   descShort: { en: "Fried chicken over rice.", fa: "مرغ سوخاری روی برنج." },
-          //   descLong: {
-          //     en: "Crispy karaage with sauce over rice. Great with a side soup.",
-          //     fa: "کاراآگه ترد با سس روی برنج. عالی کنار سوپ.",
-          //   },
-          //   price: 2500000,
-          // },
-          // {
-          //   id: "bowl-soboro-don",
-          //   name: { en: "Soboro-don", fa: "سوبورو-دون" },
-          //   descShort: { en: "Minced chicken over rice.", fa: "مرغ چرخ‌کرده روی برنج." },
-          //   descLong: {
-          //     en: "Seasoned minced chicken over rice. Mild and kid-friendly.",
-          //     fa: "مرغ چرخ‌کرده مزه‌دار روی برنج. ملایم و مناسب خانواده.",
-          //   },
-          //   price: 2000000,
-          // },
+          {
+            id: "bowl-karaage-don",
+            name: { en: "Karaage-don", fa: "کاراآگه-دون" },
+            descShort: { en: "Fried chicken over rice.", fa: "مرغ سوخاری روی برنج." },
+            descLong: {
+              en: "Crispy karaage with sauce over rice. Great with a side soup.",
+              fa: "کاراآگه ترد با سس روی برنج. عالی کنار سوپ.",
+            },
+            price: 2500000,
+          },
+          {
+            id: "bowl-soboro-don",
+            name: { en: "Soboro-don", fa: "سوبورو-دون" },
+            descShort: { en: "Minced chicken over rice.", fa: "مرغ چرخ‌کرده روی برنج." },
+            descLong: {
+              en: "Seasoned minced chicken over rice. Mild and kid-friendly.",
+              fa: "مرغ چرخ‌کرده مزه‌دار روی برنج. ملایم و مناسب خانواده.",
+            },
+            price: 2000000,
+          },
+          {
+          id: "bowl-flakes-don",
+          name: { en: "flacks-don", fa: "سوبورو-دون" },
+          descShort: { en: "Chicken flakes over rice.", fa: "تکه‌های مرغ روی برنج" },
+          descLong: {
+            en: "Flavoured fillet chicken flakes over rice. Mild and kid-friendly.",
+            fa: "مرغ چرخ‌کرده مزه‌دار روی برنج. ملایم و مناسب خانواده.",
+          },
+          price: 2000000,
+        },
         ],
       },
   
