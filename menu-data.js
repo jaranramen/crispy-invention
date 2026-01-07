@@ -222,7 +222,7 @@ window.MENU = {
             descShort: { en: "Rich custard dessert.", fa: "دسر کاستارد غنی." },
             descLong: { en: "Silky custard with caramelized sugar top.", fa: "کاستارد لطیف با رویه کاراملی." },
             price: 1000000,
-            status: "comingSoon" // ← これ
+            // status: "comingSoon" // ← これ
           },
         ],
       },
